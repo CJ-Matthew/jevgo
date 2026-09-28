@@ -1,0 +1,23 @@
+{
+  "match": "Stripe",
+  "response": {
+    "model": "jev-1.13.0",
+    "answers": {
+      "department": {
+        "type": "choice",
+        "choice": "technical",
+        "probabilities": {"technical": 0.94, "billing": 0.04, "sales": 0.02},
+        "confidence": 0.91
+      },
+      "frustration": {
+        "type": "score",
+        "score": 1.4,
+        "probabilities": {"0": 0.10, "1": 0.50, "2": 0.40},
+        "legend": {"0": "Calm", "1": "Frustrated but civil", "2": "Very angry"},
+        "confidence": 0.62
+      },
+      "is_urgent": {"type": "noul", "noul": 0.93}
+    },
+    "usage": {"input_tokens": 120, "output_tokens": 0}
+  }
+}
